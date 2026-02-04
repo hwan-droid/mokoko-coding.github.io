@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main1.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
@@ -100,18 +101,28 @@
         </header>
         <!-- Main 영역 -->
         <main id="main">
+            <!-- 슬라이드 영역 -->
             <figure id="vs">
+                <input type="radio" id="s01" name="ra" class="ra" checked>
+                <input type="radio" id="s02" name="ra" class="ra">
+                <input type="radio" id="s03" name="ra" class="ra">
+                <input type="radio" id="s04" name="ra" class="ra">
                 <div class="slide_box">
                     <div class="slide">
                         <img src="./images/vs01.png" alt="성산일출봉">
                         <div class="tit_box">
-                            <h1><span>33</span><span>th</span></h1>
+                            <h1><span class="slide_tit_1">33</span><span class="slide_tit_2">th</span></h1>
                             <h3>성산일출축제</h3>
                             <h4>2025.12.31 ~ 2026.01.01</h4>
                         </div>
                     </div>
                     <div class="slide">
                         <img src="./images/vs02.png" alt="">
+                        <div class="tit_box">
+                            <h1><span class="slide_tit_1">33</span><span class="slide_tit_2">th</span></h1>
+                            <h3>성산일출축제</h3>
+                            <h4>2025.12.31 ~ 2026.01.01</h4>
+                        </div>
                     </div>
                     <div class="slide">
                         <img src="./images/vs03.png" alt="우도">
@@ -120,7 +131,59 @@
                         <img src="./images/vs04.png" alt="정방폭포">
                     </div>
                 </div>
+                <div class="btn_box">
+                    <ul class="btn_wrap">
+                        <li><label for="s01" class="vs_btn" id="vs_btn1"></label></li>
+                        <li><label for="s02" class="vs_btn" id="vs_btn2"></label></li>
+                        <li><label for="s03" class="vs_btn" id="vs_btn3"></label></li>
+                        <li><label for="s04" class="vs_btn" id="vs_btn4"></label></li>
+                    </ul>
+                </div>
             </figure>
+            <!-- 제주 여행지 영역 -->
+            <section class="page" id="page1">
+                <div class="page_wrap">
+                    <h2>제주 여행지</h2>
+                    <div class="page_grid">
+                        <div class="row1">
+
+                        </div>
+                    </div>        
+                </div>
+            </section>
+            <!-- 제주의 영상속으로 -->
+            <section class="page" id="page2">
+                <div class="page_wrap">
+                    <h2>제주의 영상속으로</h2>
+                    <div class="page_grid">
+                        <div class="row2">
+                            
+                        </div>
+                    </div>        
+                </div>
+            </section>
+            <!-- 축제와 행사 -->
+            <section class="page" id="page3">
+                <div class="page_wrap">
+                    <h2>축제와 행사</h2>
+                    <div class="page_grid">
+                        <div class="row3">
+                            
+                        </div>
+                    </div>        
+                </div>
+            </section>
+            <!-- 공지 -->
+            <section class="page" id="page4">
+                <div class="page_wrap">
+                    <h2>여기는 공지쪽인뎅...</h2>
+                    <div class="page_grid">
+                        <div class="row4">
+                            
+                        </div>
+                    </div>        
+                </div>
+            </section>
         </main>
         <!-- Footer 영역 -->
         <footer id="ft">
