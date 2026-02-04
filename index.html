@@ -6,22 +6,26 @@
     <title>제주문화관광</title>
     <!-- css link 모음 -->
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font1.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main1.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 <body>
     <div class="wrap">
         <!-- header영역 -->
         <header id="hd">
             <div class="container">
-                <a href="/" class="log"><img src="./images/logo.svg" alt=""></a>
+                <a href="/" class="log"><img src="./images/J_logo.png" alt=""><img src="./images/logo_tt.png" alt=""></a>
                 <nav class="gnb">
                     <ul class="menu">
                         <li>
                             <a href="" class="dp1">문화/역사/예술</a>
                             <ul class="sub">
                                 <li><a href="">개국신화</a></li>
-                                <li><a href="">4.3</a></li>
+                                <li><a href="">역사</a></li>
                                 <li><a href="">민속</a></li>
                                 <li><a href="">탄생설화</a></li>
                                 <li><a href="">유네스코</a></li>
@@ -74,14 +78,170 @@
                     </ul>
                 </nav>
                 <nav class="tnb">
-                    <a href="">로그인</a>
-                    <a href="">회원가입</a>
-                    <a href="">Contact US</a>
+                    <div class="tnb_con">
+                        <a href="login.html" class="tnb_bg1">
+                            <img src="./images/icon16.png" alt="감귤">
+                            <span>로그인</span>
+                        </a>
+                    </div>
+                    <div class="tnb_con">
+                        <a href="join.html" class="tnb_bg2">
+                            <img src="./images/icon5.png" alt="땅콩">
+                            <span>회원가입</span>
+                        </a>
+                    </div>
+                    <div class="tnb_con">
+                        <a href="contact_us.html" class="tnb_bg3">
+                            <img src="./images/icon4.png" alt="돌하르방">
+                            <span>Contact US</span>
+                        </a>
+                    </div>
                 </nav>
             </div>
         </header>
         <!-- Main 영역 -->
-         
+        <main id="main">
+            <!-- 슬라이드 영역 -->
+            <figure id="vs">
+                <input type="radio" id="s01" name="ra" class="ra" checked>
+                <input type="radio" id="s02" name="ra" class="ra">
+                <input type="radio" id="s03" name="ra" class="ra">
+                <input type="radio" id="s04" name="ra" class="ra">
+                <div class="slide_box">
+                    <div class="slide">
+                        <img src="./images/vs01.png" alt="성산일출봉">
+                        <div class="tit_box">
+                            <h1><span class="slide_tit_1">33</span><span class="slide_tit_2">th</span></h1>
+                            <h3>성산일출축제</h3>
+                            <h4>2025.12.31 ~ 2026.01.01</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/vs02.png" alt="">
+                        <div class="tit_box">
+                            <h1><span class="slide_tit_1">33</span><span class="slide_tit_2">th</span></h1>
+                            <h3>성산일출축제</h3>
+                            <h4>2025.12.31 ~ 2026.01.01</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/vs03.png" alt="우도">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/vs04.png" alt="정방폭포">
+                    </div>
+                </div>
+                <div class="btn_box">
+                    <ul class="btn_wrap">
+                        <li><label for="s01" class="vs_btn" id="vs_btn1"></label></li>
+                        <li><label for="s02" class="vs_btn" id="vs_btn2"></label></li>
+                        <li><label for="s03" class="vs_btn" id="vs_btn3"></label></li>
+                        <li><label for="s04" class="vs_btn" id="vs_btn4"></label></li>
+                    </ul>
+                </div>
+            </figure>
+            <!-- 제주 여행지 영역 -->
+            <section class="page" id="page1">
+                <div class="page_wrap">
+                    <h2>제주 여행지</h2>
+                    <div class="page_grid">
+                        <div class="row1">
+
+                        </div>
+                    </div>        
+                </div>
+            </section>
+            <!-- 제주의 영상속으로 -->
+            <section class="page" id="page2">
+                <div class="page_wrap">
+                    <h2>제주의 영상속으로</h2>
+                    <div class="page_grid">
+                        <div class="row2">
+                            
+                        </div>
+                    </div>        
+                </div>
+            </section>
+            <!-- 축제와 행사 -->
+            <section class="page" id="page3">
+                <div class="page_wrap">
+                    <h2>축제와 행사</h2>
+                    <div class="page_grid">
+                        <div class="row3">
+                            
+                        </div>
+                    </div>        
+                </div>
+            </section>
+            <!-- 공지 -->
+            <section class="page" id="page4">
+                <div class="page_wrap">
+                    <h2>여기는 공지쪽인뎅...</h2>
+                    <div class="page_grid">
+                        <div class="row4">
+                            
+                        </div>
+                    </div>        
+                </div>
+            </section>
+        </main>
+        <!-- Footer 영역 -->
+        <footer id="ft">
+            <div class="container">
+                <nav id="banner_bar">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="./images/ban01.png" alt="제주특별자치도">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/ban02.png" alt="한국관광공사">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/ban03.png" alt="eJeju">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/ban04.png" alt="제주면세">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/ban05.png" alt="제주관광공사">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/ban06.png" alt="제주지방기상청">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./images/ban07.png" alt="제주종합쇼핑몰 탐나오">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav id="fnb">
+                    <a href="">개인정보처리방침</a>
+                    <a href="">이용약관</a>
+                    <a href="">제주관광문의</a>
+                    <a href="">불편신고</a>
+                </nav>
+                <div class="copyright">
+                    <p class="cp_1">Copyright©Jeju Tourism Organization, All rights reserved.</p>
+                    <p class="cp_2">홈페이지에 게시된 이메일 주소가 자동수집되는 것을 거부하며, 위반시 정보통신망법에 의해 처벌될 수 있습니다.</p>
+                    <p class="cp_3">(63122) 제주특별자치도 제주시 선덕로 23(연동) 제주웰컴센터<br>
+                        관광문의 : 제주관광공사 Tel : 064-740-6000~1 FAX : 064-740-6090 사업자등록번호 : 616-82-21432<br>
+                        관광불편신고 : 제주관광불편신고센터(1533-0082)</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
