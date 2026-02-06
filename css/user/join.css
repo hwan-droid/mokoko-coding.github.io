@@ -4,3 +4,108 @@
     margin-top: 90px;
     overflow-x: hidden;
 }
+
+.page {
+    clear: both;
+    width: 100vw;
+    padding: 40px 0px;
+}
+
+.page_wrap {
+    width: 1320px;
+    min-height: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.page_grid {
+    clear: both;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.join_page_box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join_page {
+    width: 600px;
+}
+
+.join_page h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #3D2B1F;
+}
+
+.join_agreement {
+    display: flex;
+    flex-direction: column;
+}
+
+.check .check_choice {
+    display: flex;
+    flex-direction: column;
+}
+
+.join_form {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.form_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.label_box {
+    width: 120px;
+    font-weight: bold;
+    color: #3D2B1F;
+}
+
+.form_row input {
+    width: 350px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border: 1px solid #3D2B1F;
+    box-sizing: border-box;
+}
+
+.form_row input:focus {
+    border-color: #FFA500;
+    outline: none;
+}
+
+.form_row input::placeholder {
+    text-align: center;
+}
+
+.join_img_box {
+    width: 50%;
+}
+
+.join_img {
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 700px;
+    height: 900px;
+}
+
+.join_img img {
+    object-fit: cover;
+    object-position: center;
+}

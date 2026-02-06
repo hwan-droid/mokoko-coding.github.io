@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,14 @@
     <link rel="stylesheet" href="../css/common/footer.css">
     <link rel="stylesheet" href="../css/user/join.css">
 </head>
+
 <body>
     <div class="wrap">
         <!-- header영역 -->
         <header id="hd">
             <div class="container">
-                <a href="/" class="log"><img src="../../images/logo/J_logo.png" alt=""><img src="../../images/logo/logo_tt.png" alt=""></a>
+                <a href="/" class="log"><img src="../../images/logo/J_logo.png" alt=""><img
+                        src="../../images/logo/logo_tt.png" alt=""></a>
                 <nav class="gnb">
                     <ul class="menu">
                         <li>
@@ -90,7 +93,7 @@
                         </a>
                     </div>
                     <div class="tnb_con">
-                        <a href="contact_us.html" class="tnb_bg3">
+                        <a href="./contact_us.html" class="tnb_bg3">
                             <img src="../images/icon/icon4.png" alt="돌하르방">
                             <span>Contact US</span>
                         </a>
@@ -100,79 +103,166 @@
         </header>
 
         <!-- Main 영역 -->
-         <main id="main">
-            <section class="page" id="join_page">
+        <main id="main">
+            <div class="page" id="join_page">
                 <div class="page_wrap">
-                    <h2 class="page_title">회원가입</h2>
-                    <form action="" id="join_form">
-                        <div class="join_agreement">
-                            <div class="label_box">이용약관동의<span>*</span></div>
-                            <div class="input_inner">
-                                <div class="check">
-                                    <div class="check_all">
-                                        <input type="checkbox" id="all_agree"><label for="all_agree">전체 동의합니다.</label>
+                    <div class="page_grid">
+                        <div class="join_page_box">
+                            <div class="join_page">
+                                <h3>회원가입</h3>
+                                <form action="" id="join_form">
+                                    <div class="join_agreement">
+                                        <div class="label_box">이용약관동의<span>*</span></div>
+                                        <div class="input_inner">
+                                            <div class="check">
+                                                <div class="check_all">
+                                                    <input type="checkbox" id="all_agree" onclick="chk()"><label for="all_agree">전체 동의합니다.</label>
+                                                </div>
+                                                <ul class="check_choice">
+                                                    <li>
+                                                        <input type="checkbox" id="check_agree1" class="sub_agree" onclick="sub_chk(1)">
+                                                        <label for="check_agree1"><span>본인은 만 14세 이상입니다.</span>(필수)</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="check_agree2" class="sub_agree" onclick="sub_chk(2)">
+                                                        <label for="check_agree2"><span>이용약관 동의</span>(필수)</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="check_agree3" class="sub_agree" onclick="sub_chk(3)">
+                                                        <label for="check_agree3"><span>개인정보 수집 · 이용 동의</span>(필수)</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="check_agree4" class="sub_agree" onclick="sub_chk(4)">
+                                                        <label for="check_agree4"><span>개인정보 수집 · 이용 동의</span>(선택)</label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="check_choice">
-                                        <input type="checkbox" id="check_agree"><label for="all_agree"><span>이용약관 동의</span>필수</label>
-                                        <input type="checkbox" id="check_agree"><label for="all_agree"><span>개인정보 수집 · 이용 동의</span>필수</label>
-                                        <input type="checkbox" id="check_agree"><label for="all_agree"><span>개인정보 수집 · 이용 동의</span>선택</label>
-                                        <input type="checkbox" id="check_agree"><label for="all_agree"><span>본인은 만 14세 이상입니다.</span>필수</label>
+                                    <hr>
+                                    <div class="form_row">
+                                        <div class="label_box">
+                                            <label for="">아이디</label>
+                                        </div>
+                                        <div class="input_inner">
+                                            <input type="text" name="" id="user_id" placeholder="ID를 입력하세요.">
+                                            <button type="button" class="btn_inline">중복확인</button>
+                                        </div>
                                     </div>
-                                </div>
+                                    <div class="form_row">
+                                        <div class="label_box">
+                                            <label for="">비밀번호</label>
+                                        </div>
+                                        <div class="input_inner">
+                                            <input type="text" name="" id="user_pw" placeholder="Password를 입력하세요.">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="label_box">
+                                            <label for="">비밀번호 확인</label>
+                                        </div>
+                                        <div class="input_inner">
+                                            <input type="text" name="" id="user_pwck" placeholder="Password를 한번 더 입력하세요.">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="label_box"><label for="">이름</label></div>
+                                        <div class="input_inner">
+                                            <input type="text" id="user_name" placeholder="Name을 입력하세요.">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="label_box"><label for="">이메일</label></div>
+                                        <div class="input_inner">
+                                            <input type="text" name="" id="user_email" placeholder="E-mail을 입력하세요.">
+                                            <button type="button" class="btn_inline">중복확인</button>
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="label_box"><label for="">연락처</label></div>
+                                        <div class="input_inner">
+                                            <input type="text" name="" id="user_phone" placeholder="숫자만 입력하세요.">
+                                        </div>
+                                    </div>
+                                    <div class="form_row">
+                                        <div class="label_box"><label for="">주소</label></div>
+                                        <div class="input_inner">
+                                            <button type="button" class="btn_inline">주소 검색</button>
+                                        </div>
+                                    </div>
+                                    <div class="btn_con">
+                                        <button type="submit" class="btn_join" onclick="fnc()">가입하기</button>
+                                    </div>
+
+                                    <script>
+                                        function chk() {
+                                            let checkAll = document.getElementById("all_agree");
+                                            let checkboxes = document.querySelectorAll('.sub_agree');
+                                            let isChecked = checkAll.checked;
+
+                                            if(isChecked) {
+                                                for(let checkbox of checkboxes) {
+                                                    checkbox.checked = true;
+                                                }
+                                            } else {
+                                                for(let checkbox of checkboxes) {
+                                                    checkbox.checked = false;
+                                                }
+                                            }
+                                        }
+
+                                        function sub_chk(a) {
+                                            let agree1 = document.getElementById("check_agree1");
+                                            let agree2 = document.getElementById("check_agree2");
+                                            let agree3 = document.getElementById("check_agree3");
+                                            let agree4 = document.getElementById("check_agree4"); 
+                                            let checkAll = document.getElementById("all_agree");
+                                            if(agree1.checked && agree2.checked && agree3.checked && agree4.checked) {
+                                                checkAll.checked = true;
+                                            } else {
+                                                checkAll.checked = false;
+                                            }
+                                        }
+
+                                        function fnc() {
+                                            let agree1 = document.getElementById("check_agree1");
+                                            let agree2 = document.getElementById("check_agree2");
+                                            let agree3 = document.getElementById("check_agree3");
+
+                                            if (!agree1.checked) {
+                                                alert("만 14세 이상인지 확인해 주세요.");
+                                                agree1.focus();
+                                                return;
+                                            }
+
+                                            if (!agree2.checked) {
+                                                alert("이용약관에 동의해 주세요.");
+                                                agree2.focus();
+                                                return;
+                                            }
+
+                                            if (!agree3.checked) {
+                                                alert("개인정보처리 방침(필수)에 동의해 주세요");
+                                                agree3.focus();
+                                                return;
+                                            }
+
+                                            alert("회원가입을 진행합니다.");
+                                            location.href = "login.html";
+                                        }    
+                                    </script>
+                                </form>
                             </div>
                         </div>
-                        <hr>
-                        <div class="form_row">
-                            <div class="label_box"><label for="">아이디</label></div>
-                            <div class="input_inner">
-                                <input type="text" name="" id="user_id" placeholder="ID를 입력하세요.">
-                                <button type="button" class="btn_inline">중복확인</button>
-                            </div>
+                        <div class="join_img_box">
+                            <div class="join_img">
+                                <img src="../images/user/join.jpg" alt="">
+                            </div> 
                         </div>
-                        <div class="form_row">
-                            <div class="label_box"><label for="">비밀번호</label></div>
-                            <div class="input_inner">
-                                <input type="text" name="" id="user_pw" placeholder="Password를 입력하세요.">
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="label_box"><label for="">비밀번호 확인</label></div>
-                            <div class="input_inner">
-                                <input type="text" name="" id="user_pwck" placeholder="Password를 한번 더 입력하세요.">
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="label_box"><label for="">이름</label></div>
-                            <div class="input_inner">
-                                <input type="text" id="user_name" placeholder="Name을 입력하세요.">
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="label_box"><label for="">이메일</label></div>
-                            <div class="input_inner">
-                                <input type="text" name="" id="user_email" placeholder="E-mail을 입력하세요.">
-                                <button type="button" class="btn_inline">중복확인</button>
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="label_box"><label for="">연락처</label></div>
-                            <div class="input_inner">
-                                <input type="text" name="" id="user_phone" placeholder="숫자만 입력하세요.">
-                            </div>
-                        </div>
-                        <div class="form_row">
-                            <div class="label_box"><label for="">주소</label></div>
-                            <div class="input_inner">
-                                <button type="button" class="btn_inline">주소 검색</button>
-                            </div>
-                        </div>
-                        <div class="btn_con">
-                            <button type="submit" class="btn_join">가입하기</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-            </section>
-         </main>
+            </div>
+        </main>
 
         <!-- Footer 영역 -->
         <footer id="ft">
@@ -233,4 +323,5 @@
         </footer>
     </div>
 </body>
+
 </html>
