@@ -44,11 +44,13 @@
 
 .login_page_box {
     width: 50%;
-    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .login_page {
-    width: 600px;
+    width: 500px;
 }
 
 .login_page h3 {
@@ -60,19 +62,23 @@
 }
 
 #login_form input {
-    width: 500px;
+    width: 100%;
     height: 50px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     border: none;
     border: 1px solid #FFA500;
-
+    box-sizing: border-box;
 }
 
 #login_form input:focus {
     border-color: #FFA500;
     outline: none;
+}
+
+#login_form input::placeholder {
+    text-align: center;
 }
 
 .form1 {
@@ -81,6 +87,7 @@
 }
 
 .btn_con {
+    width: 450px;
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
@@ -88,15 +95,38 @@
 }
 
 .btn_con button {
+    width: 100%;
+    height: 50px;
     line-height: 50px;
     background-color: #FFA500;
     color: #fff;
     text-align: center;
     border: none;
-    padding: 0 240px;
     border-radius: 10px;
 }
 
-.btn_con a {
-    
+.btn_con_ctrl {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    row-gap: 10px;
+    font-size: 14px;
+}
+
+.btn_con_ctrl p {
+    color: #666;
+    margin: 10px;
+}
+
+.btn_con_ctrl a {
+    color: #3D2B1F;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+    margin: 10px;
+}
+
+.btn_con_ctrl a:hover {
+    color: #FFA500;
+    text-decoration: underline;
 }
