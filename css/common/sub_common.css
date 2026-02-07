@@ -77,3 +77,7 @@
 .sub_tnb_con a:hover{
     border: 2px solid #03A66A;
 }
+
+.active {
+    color: #F27405;
+}
