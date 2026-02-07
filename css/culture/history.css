@@ -1,12 +1,6 @@
 @charset "utf-8";
 
 .page_tit {
-    width: 100%;
-    text-align: center;
-
-}
-
-.page_tit {
     clear: both;
     width: 100%;
     text-align: center;
@@ -56,6 +50,7 @@
     justify-content: center;
     align-items: center;
 }
-#history {
+
+.active{
     color: #F27405;
 }
