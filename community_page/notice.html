@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/common/common.css">
     <link rel="stylesheet" href="../css/common/header.css">
     <link rel="stylesheet" href="../css/common/footer.css">
+    <link rel="stylesheet" href="../css/community/notice.css">
     <link rel="stylesheet" href="../css/common/sub_common.css">
-    <link rel="stylesheet" href="../css/common/notice.css">
 </head>
 
 <body>
@@ -107,10 +107,7 @@
         <!-- Main 영역 -->
         <main id="main">
             <div class="bgi_con">
-                <img src="../images/community/community_in_bg.jpg" alt="">
-                <div class="tit_con">
-                    <h2>공지사항</h2>
-                </div>
+                <img src="../images/community/community_noti_bg.jpg" alt="">
             </div>
             <div class="main_con">
                 <!-- tnb 메뉴 -->
@@ -125,17 +122,161 @@
                 </div>
 
                 <!-- 메인 컨텐츠 -->
-                 <div class="page_tit">
-                    <h3>공지사항</h3>
-                 </div>
-                 <div class="page_content">
-                    <div class="page_grid">
-                        <div class="row1">
+                <div class="page" id="notice_page">
+                    <div class="page_wrap">
+                        <div class="page_tit">
+                            <h3>공지사항</h3>
+                        </div>
+                        <div class="page_grid">
+                            <div class="row1">
+                                <div class="search_box">
+                                    <form action="">
+                                    <select name="search_type">
+                                        <option value="title">제목</option>
+                                        <option value="content">내용</option>
+                                    </select>
+                                    <input type="text" placeholder="검색어를 입력하세요">
+                                    <button type="submit">검색</button>
+                                </form>
+                                </div>
+                                <table class="notice_list">
+                                    <thead>
+                                        <tr>
+                                            <th>번호</th>
+                                            <th>제목</th>
+                                            <th>작성자</th>
+                                            <th>작성일</th>
+                                            <th>조회수</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="notice_pin">
+                                            <td>3</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [홍보] 제주시 「에코촌 유스호스텔」 숙박요금 인하 및 감면기준 확대
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2026.02.07 09:27:27</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="notice_pin">
+                                            <td>2</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [모집] 2026 제주 마을여행 전담여행사, 크리에이터 모집(~ 02.28)
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2026.02.07 09:21:53</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="notice_pin">
+                                            <td>1</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [운영시간] 천지연폭포 반려동물 동반 가능 시간
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2026.02.07 09:10:12</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>27</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [이벤트] &lt;모두의 제주를 찾습니다!&gt; 당첨자 발표
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2026.02.06 15:36:44</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [휴관안내] 제주도립미술관(02.17 ~ 02.27)
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2026.02.05 11:58:62</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [공지] 한라산국립공원 시설사용료(주차료) 인상계획 알림
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2026.01.02 16:44:20</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [이벤트] &lt;모두의 제주를 찾습니다!&gt; (01.01 ~ 01.31)
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2025.12.24 12:10:18</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [홍보] 한라눈꽃버스운행 (25.12.13 ~ 26.03.02)
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2025.12.10 14:30:12</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [혜택] 제주 디지털 나우다 소지자 대상 공영관광지 감면 적용(25.12.01 ~ 26.05.31)
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2025.11.30 16:12:16</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>
+                                                <a href="../community_page/notice_detail.html">
+                                                    [정보] 관음사코스 백록담 통제 알림(2025.09.15 ~ 2026.12.31)
+                                                </a>
+                                            </td>
+                                            <td>관리자</td>
+                                            <td>2025.09.15 13:00:58</td>
+                                            <td>0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="pagination">
+                                    <a href="#" class="prev">◀</a>
+                                    <a href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#" class="next">▶</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
+
+        <!-- footer 영역 -->
         <footer id="ft">
             <div class="container">
                 <nav id="banner_bar">
