@@ -6,8 +6,7 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #fff;
-    border-bottom: 1px solid #3D2B1F;
+    background-color: rgba(3, 166, 106, 0.5);
 }
 
 #hd .container {
@@ -55,12 +54,13 @@
     font-size: 20px;
     font-weight: 600;
     align-items: center;
-    
+    color: #3D2B1F;
 }
 
 
 .gnb .menu > li:hover a.dp1 {
     color: #03A66A;
+    text-shadow: 2px 2px 0 #FFA500;
 }
 
 .gnb .sub {
@@ -87,7 +87,9 @@
     display: block;
     padding: 10px 20px;
     margin: 0;
-    font-size: 16px;
+    font-family: "JejuG";
+    font-weight: 400;
+    font-size: 18px;
     color: #3D2B1F;
     white-space: nowrap;
 }
