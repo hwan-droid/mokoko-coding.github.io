@@ -54,19 +54,25 @@
 
 .event_img span {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    padding: 5px 10px;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
     color: white;
     font-size: 13px;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .tag_ing { 
-    background-color: #ff7e00; 
+    background-color: #ff7e00;
 }
 .tag_end { 
-    background-color: #888; 
+    background-color: #888;
+}
+
+.event_img.is_end img {
+    filter: blur(2px) grayscale(50%); 
+    opacity: 0.7; 
 }
 
 .event_txt {
@@ -88,7 +94,7 @@
     color: #666;
 }
 
-.event_item:hover {
-    border-color: #ff7e00;
+.event_img img:hover {
+    transform: scale(1.1);
     transition: 0.3s;
 }
