@@ -12,7 +12,12 @@
     <link rel="stylesheet" href="../css/common/header.css">
     <link rel="stylesheet" href="../css/common/footer.css">
     <link rel="stylesheet" href="../css/common/sub_common.css">
-    <link rel="stylesheet" href="../css/guide/hotel.css">
+    <link rel="stylesheet" href="../css/common/footer.css">
+    <style>
+        #main {
+            height: 100vh; /* 임시 높이 설정*/
+        }
+    </style>
 </head>
 
 <body>
@@ -20,10 +25,8 @@
         <!-- header영역 -->
         <header id="hd">
             <div class="container">
-                <a href="../index.html" class="log">
-                    <img src="../images/logo/J_logo.png" alt="">
-                    <img src="../images/logo/logo_tt.png" alt="">
-                </a>
+                <a href="../index.html" class="log"><img src="../images/logo/J_logo.png" alt=""><img
+                        src="../images/logo/logo_tt.png" alt=""></a>
                 <nav class="gnb">
                     <ul class="menu">
                         <li>
@@ -44,7 +47,7 @@
                                 <li><a href="../tour_page/chujado.html">추자도</a></li>
                                 <li><a href="../tour_page/hallasan.html">한라산국립공원</a></li>
                                 <li><a href="../tour_page/seopjikoji.html">섭지코지</a></li>
-                                <li><a href="../tour_page/sengsan_peak.html">성산일출봉</a></li>
+                                <li><a href="../tour_page/seongsan_peak.html">성산일출봉</a></li>
                                 <li><a href="../tour_page/jeongbang.html">정방폭포</a></li>
                             </ul>
                         </li>
@@ -84,19 +87,19 @@
                 </nav>
                 <nav class="tnb">
                     <div class="tnb_con">
-                        <a href="../user_page/login.html" class="tnb_bg1">
+                        <a href="../login.html" class="tnb_bg1">
                             <img src="../images/icon/icon16.png" alt="감귤">
                             <span>로그인</span>
                         </a>
                     </div>
                     <div class="tnb_con">
-                        <a href="../user_page/join.html" class="tnb_bg2">
+                        <a href="../join.html" class="tnb_bg2">
                             <img src="../images/icon/icon5.png" alt="땅콩">
                             <span>회원가입</span>
                         </a>
                     </div>
                     <div class="tnb_con">
-                        <a href="" class="tnb_bg3">
+                        <a href="../contact_us.html" class="tnb_bg3">
                             <img src="../images/icon/icon4.png" alt="돌하르방">
                             <span>Contact US</span>
                         </a>
@@ -109,88 +112,24 @@
             <div class="bgi_con">
                 <img src="../images/bgi/bgi_hallasan2.jpg" alt="">
                 <div class="tit_con">
-                    <h2>숙박</h2>
+                    <h2>타이틀</h2>
                 </div>
             </div>
             <div class="main_con">
-                <!-- 메인 컨텐츠 -->
-                <div class="page_tit">
-                    <h3>호텔</h3>
-                    <h4>제주 호텔 가이드</h4>
-                </div>
-                <div class="page_content">
-                    <div class="img_con">
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/lamada.jpg" alt="">
-                                    <h5>라마다프라자 제주호텔</h5>
-                                    <h6>제주시 > 제주시내</h6>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/grand_hyatt.jpg" alt="">
-                                    <h5>그랜드 하얏트 호텔</h5>
-                                    <h6>제주시 > 제주시내</h6>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/oriental.jpg" alt="">
-                                    <h5>오리엔탈 호텔</h5>
-                                    <h6>제주시 > 제주시내</h6>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/marriott.jpg" alt="">
-                                    <h5>메리어트관 제주신화월드 호텔 앤 리조트</h5>
-                                    <h6>서귀초시 > 언덕</h6>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/cs.jpg" alt="">
-                                    <h5>씨에스 호텔 앤 리조트</h5>
-                                    <h6>서귀포시 > 중문</h6>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/we.jpg" alt="">
-                                    <h5>WE호텔 제주</h5>
-                                    <h6>서귀포시 > 서귀포시내</h6>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/kal.jpg" alt="">
-                                    <h5>서귀포 KAL 호텔</h5>
-                                    <h6>서귀포시 > 서귀포시내</h6>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="../images/hotel/mejong.jpg" alt="">
-                                    <h5>메종 글래드 제주</h5>
-                                    <h6>제주시 > 제주시내</h6>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <ul class="page_btn_con">
-                        <li><a href=""><img src="../images/icon/prev.svg" alt=""></a></li>
-                        <li><p>1</p></li>
-                        <li><a href=""><img src="../images/icon/next.svg" alt=""></a></li>
+                <!-- tnb 메뉴 -->
+                <div class="sub_tnb_con">
+                    <ul>
+                        <li><a href="../tour_page/udo.html" class="active">ACTIVE</a></li>
+                        <li><a href="../tour_page/marado.html"></a></li>
+                        <li><a href="../tour_page/chujado.html"></a></li>
+                        <li><a href="../tour_page/hallasan.html"></a></li>
+                        <li><a href="../tour_page/seopjikoji.html"></a></li>
+                        <li><a href="../tour_page/seongsan_peak.html"></a></li>
+                        <li><a href="../tour_page/jeongbang.html"></a></li>
                     </ul>
-
                 </div>
             </div>
         </main>
-        <!-- footer 영역 -->
         <footer id="ft">
             <div class="container">
                 <nav id="banner_bar">
