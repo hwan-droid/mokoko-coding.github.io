@@ -71,8 +71,7 @@
 }
 
 .event_img.is_end img {
-    filter: blur(2px) grayscale(50%); 
-    opacity: 0.7; 
+    filter: blur(2px) grayscale(70%);  
 }
 
 .event_txt {

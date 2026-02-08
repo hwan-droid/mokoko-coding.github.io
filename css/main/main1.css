@@ -12,6 +12,10 @@
     padding: 0 16px;
 }
 
+.page_wrap h2 {
+    text-align: center;
+}
+
 .page_grid {
     clear: both;
     width: 100%;
@@ -36,6 +40,7 @@
     padding-top: 24px;
     justify-content: space-around;
     min-height: 400px;
+    margin-top: 30px;
 }
 
 .row1 .thumb {
