@@ -75,7 +75,7 @@ figcaption {
     height: 240px;
     overflow: hidden;
     margin-top: 30px;
-    border: 1px solid #979797;
+    border: 1px solid #f2f2f2;
     background-color: #f8f8f8;
     border-radius: 0 0 10px 10px ;
 }
@@ -93,8 +93,11 @@ figcaption {
     align-items: center;
     padding: 0;
     margin: 0;
-    list-style: none;
+    list-style: none;    
     gap: 10px;
+}
+.row1 li{
+box-shadow: 0 4px 6px -1px #979797;
 }
 
 .row1 a {
