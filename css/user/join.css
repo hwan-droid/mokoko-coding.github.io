@@ -44,14 +44,39 @@
     color: #3D2B1F;
 }
 
-.join_agreement {
-    display: flex;
-    flex-direction: column;
+.label_box_agree {
+    margin: 10px 0;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-.check .check_choice {
+.check input[type="checkbox"] {
+    display: block;
+    appearance: none;
+    box-sizing: border-box;
+    background-clip: content-box;
+    padding: 0.25em;
+    width: 1.3em;
+    height: 1.3em;
+    border: 1px solid #3D2B1F;
+    cursor: pointer;
+    align-content: center;
+}
+
+.check input[type="checkbox"]:checked {
+    border-color: #FFA500;
+    background-color: #FFA500;
+}
+
+.check .check_all, .check .check_choice {
     display: flex;
     flex-direction: column;
+    line-height: 24px;
+}
+
+.check_choice li, .check_all li {
+    display: flex;
 }
 
 .join_form {
@@ -68,7 +93,7 @@
 
 .label_box {
     width: 120px;
-    font-weight: bold;
+    font-weight: 700;
     color: #3D2B1F;
 }
 
@@ -90,6 +115,43 @@
 
 .form_row input::placeholder {
     text-align: center;
+}
+
+.input_inner .btn_inline {
+    margin-left: 25px;
+    padding: 15px 20px;
+    border: none;
+    background-color: #3D2B1F;
+    color: #f2f2f2;
+    border-radius: 15px;
+}
+
+.input_inner .btn_inline:hover {
+    background-color: #FFA500;
+    color: #3D2B1F;
+    border-radius: 15px;
+}
+
+.btn_con {
+    display: flex;
+}
+
+.btn_con .btn_join {
+    width: 100%;
+    height: 55px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: none;
+    background-color: #FFA500;
+    color: #f2f2f2;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.btn_con .btn_join:hover {
+    background-color: #3D2B1F;
 }
 
 .join_img_box {

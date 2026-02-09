@@ -17,28 +17,29 @@
     position: relative;
     width: 100%;
     margin: 0 auto;
+    display: flex
 }
 
 #page3 {
     background-color: #F2F2F2;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center top;
     min-height: 50vh;
+    width: 1560px;
+    margin: 0 auto;
 }
 
 .row3 { 
-    display: flex; 
-    gap: 40px; 
-    align-items: flex-start; 
-    padding: 50px 0;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
 }
 
 .row3_wrap {
     display: flex; 
-    gap: 40px; 
-    align-items: center; 
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #e0f2f1;
+    height: 800px;
 }
 
 
@@ -74,10 +75,11 @@
 }
 
 .festival_text_area {
-    width: 400px; 
-    height: 500px;
+    width: 500px; 
+    height: 590px;
     overflow: hidden; 
-    border: 3px solid #ffded6;
+    background-color: #fdfdfd;
+    border-radius: 15px;
 }
 
 .text_moving_box {
@@ -85,7 +87,7 @@
 }
 
 .festival_text { 
-    height: 500px; 
+    height: 590px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,7 +136,7 @@
     transform: translateX(-25%); 
 }
 #f02:checked ~ .row3 .text_moving_box { 
-    transform: translateY(-500px); 
+    transform: translateY(-590px); 
 }
 #f02:checked ~ .row3 .fest_btn_box label:nth-child(2) { 
     background: #333; 
@@ -145,7 +147,7 @@
     transform: translateX(-50%); 
 }
 #f03:checked ~ .row3 .text_moving_box { 
-    transform: translateY(-1000px); 
+    transform: translateY(-1180px); 
 }
 #f03:checked ~ .row3 .fest_btn_box label:nth-child(3) { 
     background: #333; 
@@ -155,33 +157,8 @@
     transform: translateX(-75%); 
 }
 #f04:checked ~ .row3 .text_moving_box { 
-    transform: translateY(-1500px); 
+    transform: translateY(-1770px); 
 }
 #f04:checked ~ .row3 .fest_btn_box label:nth-child(4) { 
     background: #333; 
-}
-
-.festival_schedule_area {
-    width: 550px;
-    height: 600px;
-    border: 3px solid #ffded6;
-    /* background-image: url("../../images/main/schedule.png");
-    background-repeat: no-repeat;
-    background-size: cover; */
-}
-
-.schedule_box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.schedule_box h3 {
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.schedule_box .schedule_text {
-    margin: 25px 0;
 }
