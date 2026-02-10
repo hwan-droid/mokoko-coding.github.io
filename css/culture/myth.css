@@ -57,7 +57,7 @@
 }
 
 .page_grid_txt1 p, .page_grid_txt2 p, .page_grid_txt3 p{
-    white-space: pre-wrap;
+    line-height: 1.7em;
 }
 
 .page_grid_info .info_tit{
